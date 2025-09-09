@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Echoes of Sikkim</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="./manifest.json">
 <link rel="stylesheet" href="./styles.css">
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
 <body>
 <div class="app">
 <header class="main-header">
-  <div class="left"><img src="/assets/logo.png" alt="logo" style="height:40px"></div>
+  <div class="left"><img src="./assets/logo.png" alt="logo" style="height:40px"></div>
   <div class="center">
     <input id="topSearch" type="search" placeholder="Search monasteries, history, tours..." class="top-search">
     <button id="topSearchBtn" class="btn">Search</button>
@@ -51,6 +51,10 @@
 </div>
 <script src="./assets/libs/pannellum-loader.js"></script>
 <script src="./app.js"></script>
-<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/service-worker.js')}</script>
+<script>
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('./service-worker.js');
+}
+</script>
 </body>
 </html>
